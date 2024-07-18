@@ -1,16 +1,16 @@
 # Train ticket booking System
 
-A springboot backend ticket booking application. 
+A Spring Boot based backend application for booking train tickets.
 
 ## Features
 
 - Book a train ticket
 - Cancel a train ticket
 - View receipt/ticket details
-- View passengers and seats arrangement in a given section of a train
+- View passengers and seat arrangements in a given section of a train
 - Modify passenger's seat on request
 
-## Languages and frameworks
+## Languages, tools and frameworks
 
 - Java 17
 - Spring Boot 3.3.0
@@ -21,6 +21,22 @@ A springboot backend ticket booking application.
 - Java 17
 - Gradle (wrapped with project)
 - MySQL/H2 (H2 is embedded)
+
+
+## Getting started
+###  1.  Build the project
+```console
+     ./gradle clean build
+```
+###  2.  Run the application
+```console
+     java  -jar build/libs/tms-0.0.1-SNAPSHOT.jar --server.port=8080
+```
+###  3. Check the endpoints
+#####       a. Check below mentioned endpoints (Refer curl_commands.md for example)
+###  4. Database information
+####        a. This application uses an H2 database by default and populates seed data on startup.
+
 
 ## API Endpoints
 
@@ -109,7 +125,7 @@ A springboot backend ticket booking application.
 - **URL:** `/api/sections/view/{sectionId}`
 - **Method:** `POST`
 - **Description:** View passengers and seats arrangement in a given section.
-- **Request Body:** 
+- **Request Body:**
 - **Response Body:**
   ```json
   [
@@ -133,7 +149,7 @@ A springboot backend ticket booking application.
 - **Method:** `POST`
 - **Description:** Changes seat of a passenger if available.
 - **Request Body:**
-- 
+-
 - **Response Body:**
   ```json
   {
