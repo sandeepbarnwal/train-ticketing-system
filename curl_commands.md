@@ -62,9 +62,9 @@ curl --location 'http://localhost:8080/api/bookings' \
 ```
 
 ```console
-curl --location 'http://localhost:8080/api/sections/view/1' \
---data ''
+curl --location 'http://localhost:8080/api/sections/view/1' 
 ```
+
 ```console
 curl --location 'http://localhost:8080/api/tickets/7SBDMTI5'
 ```

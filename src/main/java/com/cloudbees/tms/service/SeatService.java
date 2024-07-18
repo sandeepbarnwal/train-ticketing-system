@@ -67,7 +67,7 @@ public class SeatService {
         return seatRepository.findBySeatNumber(number);
     }
 
-    public void save(Seat seat) {
-        seatRepository.save(seat);
+    public Seat save(Seat seat) {
+        return seatRepository.save(seat);
     }
 }
